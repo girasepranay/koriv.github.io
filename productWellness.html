@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style_slide.css">
+
+
+  <title>KorivKruti</title>
+
+
+<body>
+  <p class="heading">KORIV KRUTI ARCHITECTS</p>
+  <p class="heading"><a href="index.html">MENU </a><a href="project.html">PROJECTS </a><a href="about.html">ABOUT </a><a
+      href="contact.html">CONTACT </a></p>
+      <div class="elementor-widget-container">
+        <h1 class="elementor-heading-title elementor-size-default">WELLNESS RETREAT</h1></div>
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="image/22.jpg" style="width:auto">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="image/21.jpg" style="width:auto">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="image/23.jpg" style="width:auto">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="image/24.jpg" style="width:auto">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="image/25.jpg" style="width:auto">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="image/26.jpg" style="width:auto">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="image/wellness.jpg" style="width:auto">
+    </div>
+
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      } s
+    </script>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    
+  </div>
+</body>
+</head>
+
+</html>
