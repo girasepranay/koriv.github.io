@@ -60,7 +60,7 @@ a:link {
 }
 a:active {
   color: black;
-  text-decoration: underline;
+  text-decoration: None;
 }
 a{
     color:black;
